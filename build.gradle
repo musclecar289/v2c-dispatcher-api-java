@@ -1,0 +1,25 @@
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+
+repositories {
+  jcenter()
+}
+
+group = prjGroup
+version = prjVer
+sourceCompatibility = prjCompat
+targetCompatibility = prjCompat
+
+dependencies {
+  implementation 'org.eclipse.jetty.websocket:websocket-client:9.4.31.v20200723'
+  implementation 'org.json:json:20200518'
+  testImplementation 'org.easymock:easymock:4.0.2'
+  testImplementation 'junit:junit:4.13'
+}
+
+eclipse {
+  classpath {
+    downloadJavadoc = true
+    downloadSources = true
+  }
+}
