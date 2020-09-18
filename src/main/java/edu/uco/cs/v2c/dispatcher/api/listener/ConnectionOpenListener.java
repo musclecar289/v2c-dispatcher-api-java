@@ -12,19 +12,20 @@
  */
 package edu.uco.cs.v2c.dispatcher.api.listener;
 
+import org.eclipse.jetty.websocket.api.Session;
+
 /**
- * Responds to the closing of the WebSocket connection.
+ * Responds to the establishment of the WebSocket connection.
  * 
  * @author Caleb L. Power
  */
-public interface ConnectionCloseListener {
+public interface ConnectionOpenListener {
   
   /**
-   * Performs some action when the WebSocket connection closes.
+   * Performs some action when the WebSocket connection opens.
    * 
-   * @param statusCode the status code 
-   * @param reason the reason
+   * @param session the session
    */
-  public void onClose(int statusCode, String reason);
+  public void onConnect(Session session);
   
 }

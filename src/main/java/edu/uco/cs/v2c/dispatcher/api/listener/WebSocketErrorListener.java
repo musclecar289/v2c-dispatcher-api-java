@@ -22,10 +22,17 @@ import edu.uco.cs.v2c.dispatcher.api.payload.incoming.ErrorPayload;
 public interface WebSocketErrorListener {
   
   /**
-   * Responds to some action when an incoming error notification is detected.
+   * Takes action when an incoming error notification is detected.
    * 
    * @param payload the incoming payload
    */
-  public void onErrorNotification(ErrorPayload payload);
+  public void onRemoteError(ErrorPayload payload);
+  
+  /**
+   * Takes action when the client experiences some error with the WebSocket.
+   * 
+   * @param throwable the throwable
+   */
+  public void onLocalError(Throwable throwable);
   
 }
