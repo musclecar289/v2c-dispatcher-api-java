@@ -12,8 +12,8 @@ sourceCompatibility = prjCompat
 targetCompatibility = prjCompat
 
 dependencies {
-  implementation 'org.eclipse.jetty.websocket:websocket-client:9.4.31.v20200723'
-  implementation 'org.json:json:20200518'
+  api 'org.eclipse.jetty.websocket:websocket-client:9.4.31.v20200723'
+  api 'org.json:json:20200518'
   testImplementation 'org.easymock:easymock:4.0.2'
   testImplementation 'junit:junit:4.13'
 }
