@@ -12,8 +12,6 @@
  */
 package edu.uco.cs.v2c.dispatcher.api.listener;
 
-import org.eclipse.jetty.websocket.api.Session;
-
 /**
  * Responds to the establishment of the WebSocket connection.
  * 
@@ -23,9 +21,7 @@ public interface ConnectionOpenListener {
   
   /**
    * Performs some action when the WebSocket connection opens.
-   * 
-   * @param session the session
    */
-  public void onConnect(Session session);
+  public void onConnect();
   
 }

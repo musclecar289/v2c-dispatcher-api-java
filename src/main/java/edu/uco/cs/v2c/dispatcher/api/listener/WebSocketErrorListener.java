@@ -31,8 +31,8 @@ public interface WebSocketErrorListener {
   /**
    * Takes action when the client experiences some error with the WebSocket.
    * 
-   * @param throwable the throwable
+   * @param cause the cause
    */
-  public void onLocalError(Throwable throwable);
+  public void onLocalError(Exception cause);
   
 }

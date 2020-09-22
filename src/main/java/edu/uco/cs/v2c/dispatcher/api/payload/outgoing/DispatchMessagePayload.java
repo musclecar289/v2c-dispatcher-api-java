@@ -89,7 +89,7 @@ public class DispatchMessagePayload extends OutgoingPayload {
     return new JSONObject()
         .put(ACTION_VAR, action)
         .put(MESSAGE_VAR, message)
-        .put(RECIPIENT_VAR, recipient);
+        .put(RECIPIENT_VAR, recipient == null ? JSONObject.NULL : recipient);
   }
   
 }

@@ -12,7 +12,7 @@ sourceCompatibility = prjCompat
 targetCompatibility = prjCompat
 
 dependencies {
-  api 'org.eclipse.jetty.websocket:websocket-client:9.4.31.v20200723'
+  api 'org.java-websocket:Java-WebSocket:1.5.1'
   api 'org.json:json:20200518'
   testImplementation 'org.easymock:easymock:4.0.2'
   testImplementation 'junit:junit:4.13'

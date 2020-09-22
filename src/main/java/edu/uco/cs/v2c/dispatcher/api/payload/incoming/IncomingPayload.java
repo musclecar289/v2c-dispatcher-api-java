@@ -114,4 +114,11 @@ public class IncomingPayload {
     return raw;
   }
   
+  /**
+   * {@inheritDoc}
+   */
+  @Override public String toString() {
+    return getRaw().toString();
+  }
+  
 }

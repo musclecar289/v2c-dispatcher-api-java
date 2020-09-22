@@ -38,7 +38,7 @@ public class RouteCommandPayload extends IncomingPayload {
    * @throws PayloadHandlingException if the payload was invalid
    */
   public RouteCommandPayload(JSONObject raw) throws PayloadHandlingException {
-    super(raw, IncomingAction.ROUTE_MESSAGE);
+    super(raw, IncomingAction.ROUTE_COMMAND);
     
     try {
       command = raw.getString(COMMAND_VAR);
