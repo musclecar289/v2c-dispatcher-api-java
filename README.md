@@ -14,4 +14,4 @@ You need Java 11. This project can be tested and compiled with the following com
 
 ## License
 
-**This repository is subject to Version 0.0.1 of the [V2C License](https://tinyurl.com/v2c-license).**
+**This repository is subject to the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).**
